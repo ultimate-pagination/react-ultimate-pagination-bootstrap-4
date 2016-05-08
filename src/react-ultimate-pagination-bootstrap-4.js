@@ -6,27 +6,39 @@ const WrapperComponent = ({children}) => (
 );
 
 const Page = ({value, isActive, onClick}) => (
-  <li className={isActive ? 'active' : null}><a href="#" onClick={onClick}>{value}</a></li>
+  <li className={isActive ? 'page-item active' : 'page-item'}>
+    <a className="page-link" href="#" onClick={onClick}>{value}</a>
+  </li>
 );
 
 const Ellipsis = ({onClick}) => (
-  <li><a href="#" onClick={onClick}>...</a></li>
+  <li className="page-item">
+    <a className="page-link" href="#" onClick={onClick}>...</a>
+  </li>
 );
 
 const FirstPageLink = ({isActive, onClick}) => (
-  <li><a href="#" onClick={onClick}>&laquo;</a></li>
+  <li className="page-item">
+    <a className="page-link" href="#" onClick={onClick}>&laquo;</a>
+  </li>
 );
 
 const PreviousPageLink = ({isActive, onClick}) => (
-  <li><a href="#" onClick={onClick}>&lsaquo;</a></li>
+  <li className="page-item">
+    <a className="page-link" href="#" onClick={onClick}>&lsaquo;</a>
+  </li>
 );
 
 const NextPageLink = ({isActive, onClick}) => (
-  <li><a href="#" onClick={onClick}>&rsaquo;</a></li>
+  <li className="page-item">
+    <a className="page-link" href="#" onClick={onClick}>&rsaquo;</a>
+  </li>
 );
 
 const LastPageLink = ({isActive, onClick}) => (
-  <li><a href="#" onClick={onClick}>&raquo;</a></li>
+  <li className="page-item">
+    <a className="page-link" href="#" onClick={onClick}>&raquo;</a>
+  </li>
 );
 
 const itemTypeToComponent = {
