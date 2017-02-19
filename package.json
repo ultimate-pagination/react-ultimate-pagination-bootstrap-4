@@ -1,6 +1,6 @@
 {
   "name": "react-ultimate-pagination-bootstrap-4",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "React.js pagination component with Bootstrap 4 theme",
   "main": "lib/react-ultimate-pagination-bootstrap-4.js",
   "keywords": [
