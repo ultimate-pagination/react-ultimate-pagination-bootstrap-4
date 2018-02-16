@@ -38,7 +38,7 @@
     "react-ultimate-pagination": "1.1.0"
   },
   "peerDependencies": {
-    "bootstrap": ">=4.0.0-alpha.1"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.7.7",
